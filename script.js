@@ -4,6 +4,7 @@ const artistImg = document.querySelector("#artistImg");
 const imgLink = document.querySelector("#imgLink");
 artistImg.style.display = "none";
 
+// Access theaudiodb api when user submits information
 form.addEventListener("submit", async function (e) {
     e.preventDefault();
     document.body.clear;
@@ -20,6 +21,7 @@ form.addEventListener("submit", async function (e) {
     form.elements.query.value = "";
 })
 
+// Retrieve and display content found from api
 const makeContent = (artistName) => {
     bioText.innerHTML = "";
     artistImg.style.display = "inline";
